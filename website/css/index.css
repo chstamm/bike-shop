@@ -111,6 +111,13 @@ ol,
 ul {
   list-style: none;
 }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 blockquote,
 q {
   quotes: none;
@@ -135,9 +142,8 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* colors */
-/* fonts */
-body {
-  font-family: 'Sen', sans-serif;
+header a {
   font-family: 'Sonsie One', cursive;
+  font-size: 2.5rem;
+  text-decoration: none;
 }
