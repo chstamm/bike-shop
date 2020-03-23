@@ -1,12 +1,68 @@
 body {
-    
+    font-family: 'Sen', sanserif;
 }
 
-header {
-   a {
-        font-family: @logoFont;
-        font-size:  @logoSize;
-        text-decoration: none;
+#top_bar{
+    background-color: @white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+    .logo{
+        padding: 2rem 0;
+        a {
+            font-family: @logoFont;
+            font-size:  @logoFontSize;
+            color: @accent1;
+        }
+    }
+
+    nav{
+        
+        ul {
+            display: flex;
+            li {
+                
+                border: solid @accent3 .5rem;
+                margin: .2rem;
+                padding: 1.5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    #icons{
+        display: flex;
+        .icon{
+            font-size: @iconFontSize;
+            padding: .5rem 2rem;
+            margin: 1rem;
+            border: solid @accent3 .2rem;
+            border-radius: 1rem;
+        }
     }
 }
 
+//responsive
+    /* .responsive(450px, {
+        float: left;
+        margin-top: 10px;
+    }); */
+
+/* nav{
+        font-size: @NavFontSize;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 1rem;
+            }
+            li:hover {
+                background-color: @accent3;
+            }
+        }
+    } */

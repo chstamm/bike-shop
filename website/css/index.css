@@ -87,7 +87,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -142,8 +142,65 @@ html {
 *:after {
   box-sizing: inherit;
 }
-header a {
+body {
+  font-family: 'Sen', sanserif;
+}
+#top_bar {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+#top_bar .logo {
+  padding: 2rem 0;
+}
+#top_bar .logo a {
   font-family: 'Sonsie One', cursive;
   font-size: 2.5rem;
-  text-decoration: none;
+  color: #0C27BF;
+}
+#top_bar nav ul {
+  display: flex;
+}
+#top_bar nav ul li {
+  border: solid #E3AA11 0.5rem;
+  margin: 0.2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+#top_bar #icons {
+  display: flex;
+}
+#top_bar #icons .icon {
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  border: solid #E3AA11 0.2rem;
+  border-radius: 1rem;
+}
+/* .responsive(450px, {
+        float: left;
+        margin-top: 10px;
+    }); */
+/* nav{
+        font-size: @NavFontSize;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 1rem;
+            }
+            li:hover {
+                background-color: @accent3;
+            }
+        }
+    } */
+main .hero img {
+  width: 100%;
 }
