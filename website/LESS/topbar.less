@@ -1,5 +1,5 @@
 body {
-    font-family: 'Sen', sanserif;
+    font-family: 'Sen';
 }
 
 #top_bar{
@@ -21,12 +21,12 @@ body {
     }
 
     nav{
-        
+        font-size: @NavFontSize;
         ul {
             display: flex;
             li {
-                
-                border: solid @accent3 .5rem;
+                border-top: solid @accent2;
+                border-bottom: solid @accent2;
                 margin: .2rem;
                 padding: 1.5rem;
                 border-radius: 1rem;
@@ -36,10 +36,11 @@ body {
     #icons{
         display: flex;
         .icon{
-            font-size: @iconFontSize;
+            font-size: @buttonFontSize;
             padding: .5rem 2rem;
             margin: 1rem;
-            border: solid @accent3 .2rem;
+            border-top: solid @accent3 .2rem;
+            border-bottom: solid @accent3 .2rem;
             border-radius: 1rem;
         }
     }
