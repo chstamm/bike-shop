@@ -154,10 +154,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  /* position: fixed;
-    top: 0;
-    width: 100%; */
+}
+@media only screen and (min-width: 1000px) {
+  #top_bar {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 #top_bar .logo {
   padding: 2rem 0;
@@ -331,6 +333,15 @@ main #hero3 div button {
   color: #fdfdfd;
   border: solid #fdfdfd 0.3rem;
   border-radius: 1rem;
+}
+#formColumn form {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#formColumn form fieldset {
+  padding: 2rem;
 }
 footer {
   background-color: #0C27BF;

@@ -36,8 +36,8 @@
 
 
 // screen sizes
-.responsive(@maxWidth; @edits) {
-    @media only screen and (max-width: @maxWidth) {
-        @rules();
+.responsive(@minWidth; @edits) {
+    @media only screen and (min-width: @minWidth) {
+        @edits();
     }
 }

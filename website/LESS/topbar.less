@@ -7,10 +7,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
+    .responsive(1000px, {
+        flex-direction: row;
+        justify-content: space-around;
+    });
     .logo{
         padding: 2rem 0;
         a {
